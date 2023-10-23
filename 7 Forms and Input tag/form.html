@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms in HTML</title>
+</head>
+<body>
+    <h2>Form to apply for Team Avengers</h2>
+    <form action="post">
+        <div>
+            <label for="username">Enter your username</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username" autofocus>
+        </div>
+        <div>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+        </div>
+        <div>
+            <input type="checkbox" id="subscribe" value="yes" required>
+            <label for="subscribe">I have superpower</label>
+        </div>
+        <div>
+            <label for="comment">Which kind of superpower you have and why do you want to </label>
+            <br>
+            <textarea name="comment" id="comment" cols="60" rows="9"></textarea>
+        </div>
+        <div>
+            Have you been in some other superhero team: 
+            <br> 
+            <select name="Experience">
+                <option value="no">No</ption>
+                <option value="yes">Yes</option>
+            </select>
+        </div>
+        <input type="submit" value="Submit Application">
+    </form>
+</body>
+</html>

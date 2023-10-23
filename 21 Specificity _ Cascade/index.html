@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* The specificity of this selector is 1 */
+        h1 {
+            color: blue;
+        }
+
+        /* The specificity of this selector is 10 */
+        .cyellow {
+            color: yellow;
+        }
+
+        /* The specificity of this selector is 10 */
+        .cred {
+            color: red;
+        }
+
+        /* The specificity of this selector is 10 */
+        .cviolet {
+            color: violet;
+        }
+
+        /* This is an example of attribute selector. The specificity of this selector is 10 */
+        [data-x=a] {
+            color: gold;
+        }
+
+        /* The specificity of this is 1(element)+10(class)+10(class)+10(attribute)+10(pseudo class)=41 */
+        a.class1.class2[value]:hover {
+            color: burlywood;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="cyellow cred cviolet" data-x="a">Hello! currently watching A good day to be a dog.</h1>
+</body>
+</html>

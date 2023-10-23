@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Avengers Application Form</title>
+</head>
+<body>
+    <h1>Avengers Application Form</h1>
+    <p>Are you ready to assemble with the Avengers? Fill out the form below!</p>
+
+    <form action="post">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+
+        <label for="superpower">Superpower:</label>
+        <br>
+        <input type="text" id="superpower" name="superpower" required>
+        <br>
+
+        <label for="experience">Previous Hero Experience (if any):</label>
+        <br>
+        <textarea id="experience" name="experience" rows="4"></textarea>
+        <br>
+
+        <label for="why">Why do you want to join the Avengers?</label>
+        <br>
+        <textarea id="why" name="why" rows="4" required></textarea>
+        <br>
+
+        <input type="submit" value="Submit Application">
+    </form>
+</body>
+</html>

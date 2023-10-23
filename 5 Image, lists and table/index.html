@@ -1,0 +1,64 @@
+<!-- Image, List, Table in HTML -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img height="500" src="image.jpg" alt="Tanjiro">
+    <!--alt use for to show alternative text if source is not available, if i set heigth, width will automatic set same for viceversa-->
+    <br>
+    <table>
+        <caption>Slayer Details</caption>
+        <thead><!--The <thead> tag is used to group header content in an HTML table.-->
+            <tr><!--tr->table row-->
+                <th>Name</th>
+                <th>Sword Color</th>
+                <th>Breathing Style</th>
+                <!--th->is used for table header cells-->
+            </tr>
+        </thead>
+        <tbody><!--tbody-> table body-->
+            <tr>
+                <td>Tanjiro</td>
+                <td>Black</td>
+                <td>Water</td>
+                <!--td-> table data-->
+            </tr>
+
+            <tr>
+                <td colspan="2">Zenitsu</td>
+                <td rowspan="3">Thunder Breathing</td>
+            </tr>
+            <tr>
+                <tr>
+                    <td>Inosuke</td>
+                    <td>Don't know</td>
+                    <td>Beast Breathing</td>
+                </tr>
+            </tr>
+            <tr>
+                <td>Inosuke</td>
+                <td>Don't know</td>
+                <td>Beast Breathing</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>all are demon slayer</td>
+            </tr>
+        </tfoot>
+    </table>
+    <ul type="square"><!--ul-> unorder list-->
+        <li>Sai</li><!--li-> list items-->
+        <li>darshan</li>
+    </ul>
+    <ol type="I"><!--ol->order list-->
+        <li>Sai</li>
+        <li>Darshan</li>
+    </ol>
+</body>
+</html>

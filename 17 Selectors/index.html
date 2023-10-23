@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Selectors</title>
+    <style>
+        /* Element Selector */
+        div{
+            background-color: blueviolet;
+        }
+
+        /* Id Selector */
+        #pink {
+            background-color: pink;
+        }
+
+        /* Class Selector */
+        .yellow {
+            background-color: yellow;
+        }
+
+        /* Child Selector */
+        div > p {
+            background-color: aqua;
+        }
+
+        /* Descendant Selector */
+        span p {
+            background-color: cadetblue;
+        }
+
+        /* Universal Selector */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Pseudo Selector */
+        a:visited {
+            color: brown;
+        }
+
+        a:link {
+            color: rgb(241, 146, 21);
+        }
+
+        a:active {
+            background-color: rgb(17, 17, 187);
+        }
+
+        a:hover {
+            background-color: crimson;
+        }
+
+        p:first-child {
+            background-color: chocolate;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <p>I'm First</p>
+        <p>I'm Second</p>
+    </main>
+    <div>
+        I'm first div.
+        <article>
+            <p></p>
+            <p>I'm para and under &lt;artical&gt; which is under &lt;div&gt;</p>
+        </article>
+    </div>
+    <div class="yellow">
+        I'm second div with class.
+    </div>
+    <div id="pink">
+        I'm third div with id.
+    </div>
+    <span>
+        <p></p>
+        <p>I'm para inside of &lt;span&gt;.</p>
+    </span>
+    <a href="https://bard.google.com/chat">Bard</a>
+    <a href="https://keep.google.com/">Keep</a>
+</body>
+</html>
