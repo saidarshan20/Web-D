@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Property</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .parent {
+            margin: 43px;
+            padding: 34px;
+            border: 2px solid black;
+            position: relative;
+        }
+
+        .box {
+            margin: 3px;
+            padding: 3px;
+            height: 200px;
+            width: 80vw;
+            border: 2px solid black;
+        }
+
+        .box1 {
+            background-color: antiquewhite;
+            position: sticky;
+            /* It will stick this box on the top and it will not move if yo scroll also it will help on nav bars. */
+            top: 0px;
+            margin: 0;
+            padding: 0;
+            height: 80px;
+            width: 100%;
+            z-index: 1;
+            /* position: absolute;
+            /* Absolute means box1 will position according to the nearest ancestor, here we haven't give any position to parent as well as body so it will position according to main html. If I give positon to parent it will position according to parent. */
+            /* top: 2px;
+            left: 12px; */
+        }
+
+        .box2 {
+            background-color: aqua;
+            position: relative;
+            top: 31px;
+            left: 43px;
+        }
+
+        .box3 {
+            background-color: aquamarine;
+            position: relative;
+            z-index: 1;
+        }
+
+        .box4 {
+            background-color: bisque;
+            position: fixed;
+            height: 100px;
+            /* fixed will fix this box on bottom and it is not going to move if i scroll the also */
+        }
+
+        .box5 {
+            background-color: cadetblue;
+        }
+    </style>
+</head>
+<body>
+    <!--Exception: Transform, filter or perspective properties can also make an element apper as positioned. position:absolute; -->
+    <div class="parent">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+        <div class="box box5"></div>
+    </div>
+</body>
+</html>
